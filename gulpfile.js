@@ -30,3 +30,12 @@ gulp.task('template', function() {
     .pipe(uglify())
     .pipe(gulp.dest('./build/'));
 });
+
+// gulp.task('template', function() {
+//   return browserify('./src/template-engine.js')
+//     .bundle()
+//     .pipe(source('template-engine.js'))
+//     .pipe(buffer())
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./build/'));
+// });
