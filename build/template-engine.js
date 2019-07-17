@@ -1,1 +1,78 @@
-!function(){return function r(t,n,e){function o(i,f){if(!n[i]){if(!t[i]){var l="function"==typeof require&&require;if(!f&&l)return l(i,!0);if(u)return u(i,!0);var c=new Error("Cannot find module '"+i+"'");throw c.code="MODULE_NOT_FOUND",c}var a=n[i]={exports:{}};t[i][0].call(a.exports,function(r){return o(t[i][1][r]||r)},a,a.exports,r,t,n,e)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<e.length;i++)o(e[i]);return o}}()({1:[function(r,t,n){"use strict";function e(r){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(r){return typeof r}:function(r){return r&&"function"==typeof Symbol&&r.constructor===Symbol&&r!==Symbol.prototype?"symbol":typeof r})(r)}Object.defineProperty(n,"__esModule",{value:!0}),n.default=function(r){function t(r,t){t&&r.elem&&!r.block&&(r.block=t);var n=r.block||t?function r(t,n){var e=t.block||n;var o=e+(t.elem?"__"+t.elem:"");var u=t.elem?t.elemMods:t.mods;var i=o===n?"":o;if(u)for(var f in u)i+=" "+o+"_"+f+(!0===u[f]?"":"_"+u[f]);if(t.mix){Array.isArray(t.mix)||(t.mix=[t.mix]);for(var l=0;l<t.mix.length;l++){var c=t.mix[l];c&&(i+=" "+r(c,e))}}return i}(r):"";return"object"!==e(r)?r:null==r||!1===r?"":' class="'+n+'"'}function n(r,e){if(void 0===r||!1===r||null===r)return"";if(r.block&&(e=r.block),Array.isArray(r))return function(r,t){for(var e="",o=0;o<r.length;o++)void 0!==r[o]&&!1!==r[o]&&null!==r[o]&&(e+=n(r[o],t));return e}(r,e);r.tag=r.tag||"div";var o="<"+r.tag+t(r,e);return o+">"+n(r.content,e)+"</"+r.tag+">"}return n(r)}},{}]},{},[1]);
+/**
+ * @param  {object} obj — Структура блоков интерфейса в формате BEMJSON
+ * @return {string} HTML разметка страницы
+ */
+
+export default function(obj) {
+  function outputClasses(obj, ctxBlock) {
+    if (ctxBlock && obj.elem && !obj.block) {
+      obj.block = ctxBlock;
+    }
+
+    let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
+
+    if (typeof obj !== 'object') {
+      return obj;
+    }
+    if (obj === undefined || obj === null || obj === false) {
+      return '';
+    }
+    return ' class="' + resultClass + '"';
+  }
+
+  function bemClass(obj, argBlock) {
+    const block = obj.block || argBlock;
+    const base = block + (obj.elem ? '__' + obj.elem : '');
+    const mods = obj.elem ? obj.elemMods : obj.mods;
+
+    let output = base === argBlock ? '' : base;
+
+    if (mods) {
+      for (let i in mods) {
+        output += ' ' + base + '_' + i + (mods[i] === true ? '' : '_' + mods[i]);
+      }
+    }
+
+    if (obj.mix) {
+      if (!Array.isArray(obj.mix)) {
+        obj.mix = [obj.mix];
+      }
+      for (let i = 0; i < obj.mix.length; i++) {
+        let mix = obj.mix[i];
+        if (!mix) {
+          continue;
+        }
+        output += ' ' + bemClass(mix, block);
+      }
+    }
+    return output;
+  }
+
+  function toHTML(obj, ctxBlock) {
+    if (obj === undefined || obj === false || obj === null) {
+      return '';
+    }
+    if (obj.block) {
+      ctxBlock = obj.block;
+    }
+    if (Array.isArray(obj)) {
+      return concatArray(obj, ctxBlock);
+    }
+    const DEFAULT_TAG = 'div';
+    obj.tag = obj.tag || DEFAULT_TAG;
+
+    const result = '<' + obj.tag + outputClasses(obj, ctxBlock);
+    return result + '>' + toHTML(obj.content, ctxBlock) + '</' + obj.tag + '>';
+  }
+
+  function concatArray(array, ctxBlock) {
+    let output = '';
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] !== undefined && array[i] !== false && array[i] !== null) {
+        output += toHTML(array[i], ctxBlock);
+      }
+    }
+    return output;
+  }
+  return toHTML(obj);
+}
