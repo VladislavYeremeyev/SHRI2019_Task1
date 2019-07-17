@@ -1,0 +1,4 @@
+.card__content_distribute_center {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}

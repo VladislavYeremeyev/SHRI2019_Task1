@@ -1,0 +1,5 @@
+.list__item_border_bottom {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-bg-color);
+}

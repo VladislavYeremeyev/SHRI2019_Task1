@@ -1,0 +1,9 @@
+.theme {
+  /* display: grid; */
+}
+
+@media screen and (max-width: 1144px) {
+  .theme {
+    grid-auto-flow: row;
+  }
+}

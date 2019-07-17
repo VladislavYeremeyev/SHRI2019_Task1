@@ -1,0 +1,4 @@
+.form__item_space-h_xl {
+  padding-left: var(--indent-xl);
+  padding-right: var(--indent-xl);
+}

@@ -1,0 +1,5 @@
+.image {
+  width: 100%;
+  border: 3px solid var(--border-bg-color);
+  background-image: var(--current-image-background);
+}

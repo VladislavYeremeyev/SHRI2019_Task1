@@ -1,0 +1,10 @@
+.theme_color_project-brand {
+	--default-bg-color: #0070f0;
+	--accent-bg-color: #FFFFFF;
+	--border-bg-color: #FFFFFF;
+
+	--primary-text-color: #FFFFFF;
+	--secondary-text-color: rgba(255, 255, 255, 0.6);
+	--additional-text-color: rgba(255, 255, 255, 0.3);
+	--link-text-color: #FFFFFF;
+}

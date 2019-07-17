@@ -1,0 +1,7 @@
+.informer {
+  background-color: var(--default-bg-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

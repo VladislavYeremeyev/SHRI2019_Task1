@@ -1,0 +1,6 @@
+.text__word {
+  height: var(--word-height);
+  background-color: var(--text-color);
+  margin-top: calc((var(--word-line-height) - var(--word-height)) / 2);
+  margin-bottom: calc((var(--word-line-height) - var(--word-height)) / 2);
+}

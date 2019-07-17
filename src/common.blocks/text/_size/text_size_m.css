@@ -1,0 +1,9 @@
+.text_size_m {
+  --word-width-s: 24px;
+  --word-width-m: 56px;
+  --word-width-l: 114px;
+
+  --word-height: 8px;
+
+  --word-line-height: var(--line-height-m);
+}
