@@ -1,0 +1,10 @@
+.onoffswitch {
+  width: 97px;
+  height: 32px;
+
+  border: 2px solid var(--border-bg-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

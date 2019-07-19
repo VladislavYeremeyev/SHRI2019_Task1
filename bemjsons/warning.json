@@ -1,0 +1,136 @@
+{
+  "block": "warning",
+  "mix": [
+    {
+      "block": "informer",
+      "mods": {
+        "view": "default",
+        "border": "all"
+      }
+    },
+    {
+      "block": "theme",
+      "mods": {
+        "color": "project-warning"
+      }
+    }
+  ],
+  "content": [
+    {
+      "elem": "content",
+      "mix": [
+        {
+          "block": "informer",
+          "elem": "content",
+          "elemMods": {
+            "distribute": "center",
+            "space-a": "xxl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "placeholder",
+          "mods": {
+            "view": "primary",
+            "size": "m"
+          }
+        },
+        {
+          "block": "text",
+          "mods": {
+            "view": "primary",
+            "size": "xl",
+            "align": "center"
+          },
+          "content": [
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "button-wrapper",
+      "mix": [
+        {
+          "block": "informer",
+          "elem": "action",
+          "elemMods": {
+            "distribute": "center",
+            "space-a": "xl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "button",
+          "mods": {
+            "size": "l"
+          }
+        }
+      ]
+    }
+  ]
+}

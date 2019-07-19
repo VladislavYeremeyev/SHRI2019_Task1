@@ -1,0 +1,5 @@
+.onoffswitch__button {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-text-color);
+}

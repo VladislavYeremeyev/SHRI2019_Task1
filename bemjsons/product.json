@@ -1,0 +1,89 @@
+{
+  "block": "product",
+  "mix": [
+    {
+      "block": "card",
+      "mods": {
+        "view": "default",
+        "border": "all"
+      }
+    }
+  ],
+  "content": [
+    {
+      "elem": "content",
+      "mix": [
+        {
+          "block": "card",
+          "elem": "content",
+          "elemMods": {
+            "space-a": "m"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "image",
+          "mix": [
+            {
+              "block": "product",
+              "elem": "image"
+            },
+            {
+              "block": "theme",
+              "mods": {
+                "color": "project-inverse"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "footer",
+      "mix": [
+        {
+          "block": "card",
+          "elem": "footer",
+          "elemMods": {
+            "space-a": "m"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "text",
+          "mods": {
+            "view": "primary",
+            "size": "m"
+          },
+          "content": [
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            }
+          ]
+        },
+        {
+          "block": "text",
+          "mods": {
+            "view": "primary",
+            "size": "s"
+          },
+          "content": [
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

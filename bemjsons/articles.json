@@ -1,0 +1,445 @@
+{
+  "block": "articles",
+  "mix": [
+    {
+      "block": "list",
+      "mods": {
+        "view": "default"
+      }
+    }
+  ],
+  "content": [
+    {
+      "elem": "article",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "indent-b": "xl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "elem": "unit",
+          "mix": [
+            {
+              "block": "icon-plus",
+              "mods": {
+                "vertical-align": "center"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "pic",
+              "mix": [
+                {
+                  "block": "theme",
+                  "mods": {
+                    "color": "project-inverse"
+                  }
+                },
+                {
+                  "block": "icon-plus",
+                  "elem": "icon",
+                  "elemMods": {
+                    "indent-r": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "image"
+                }
+              ]
+            },
+            {
+              "elem": "content",
+              "mix": [
+                {
+                  "block": "icon-plus",
+                  "elem": "block"
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "secondary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "link",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "article",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "indent-b": "xl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "elem": "unit",
+          "mix": [
+            {
+              "block": "icon-plus",
+              "mods": {
+                "vertical-align": "center"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "pic",
+              "mix": [
+                {
+                  "block": "theme",
+                  "mods": {
+                    "color": "project-inverse"
+                  }
+                },
+                {
+                  "block": "icon-plus",
+                  "elem": "icon",
+                  "elemMods": {
+                    "indent-r": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "image"
+                }
+              ]
+            },
+            {
+              "elem": "content",
+              "mix": [
+                {
+                  "block": "icon-plus",
+                  "elem": "block"
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "secondary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "link",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "article",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "indent-b": "xl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "elem": "unit",
+          "mix": [
+            {
+              "block": "icon-plus",
+              "mods": {
+                "vertical-align": "center"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "pic",
+              "mix": [
+                {
+                  "block": "theme",
+                  "mods": {
+                    "color": "project-inverse"
+                  }
+                },
+                {
+                  "block": "icon-plus",
+                  "elem": "icon",
+                  "elemMods": {
+                    "indent-r": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "image"
+                }
+              ]
+            },
+            {
+              "elem": "content",
+              "mix": [
+                {
+                  "block": "icon-plus",
+                  "elem": "block"
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "secondary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "link",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "s",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

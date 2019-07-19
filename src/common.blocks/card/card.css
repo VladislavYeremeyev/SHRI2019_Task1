@@ -1,3 +1,5 @@
 .card {
-  display: grid;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }

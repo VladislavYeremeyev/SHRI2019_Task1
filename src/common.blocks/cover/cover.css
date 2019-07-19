@@ -1,0 +1,8 @@
+.cover {
+  min-height: 408px;
+  border-width: 3px;
+}
+
+.commercial .image {
+  height: 180px;
+}

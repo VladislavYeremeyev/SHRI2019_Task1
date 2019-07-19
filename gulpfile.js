@@ -5,12 +5,14 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 let uglify = require('gulp-uglify-es').default;
 var babelify = require("babelify");
+var base64 = require('gulp-base64');
 // var minifyCSS = require('gulp-minify-css');
 // var autoprefixer = require('gulp-autoprefixer');
 // var rename = require('gulp-rename');
 
 gulp.task('css', done => {
   gulp.src('src/common.blocks/**/*.css')
+    // .pipe(base64())
     // .pipe(minifyCSS())
     // .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(concat('style.css'))

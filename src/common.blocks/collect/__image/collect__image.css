@@ -1,0 +1,4 @@
+.collect__image .image {
+  height: 160px;
+  border-color: var(--default-bg-color);
+}

@@ -1,0 +1,1302 @@
+{
+  "block": "history",
+  "mix": [
+    {
+      "block": "list",
+      "mods": {
+        "view": "default",
+        "border": "all"
+      }
+    }
+  ],
+  "content": [
+    {
+      "elem": "transaction",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "border": "bottom",
+            "space-a": "l"
+          }
+        },
+        {
+          "block": "e-accordion"
+        }
+      ],
+      "content": [
+        {
+          "elem": "show",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "vertical-align": "center",
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "short"
+            }
+          ],
+          "content": [
+            {
+              "elem": "details",
+              "content": [
+                {
+                  "elem": "time",
+                  "content": [
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "destination",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "mods": {
+                        "vertical-align": "center"
+                      }
+                    }
+                  ],
+                  "content": [
+                    {
+                      "elem": "pic",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "icon",
+                          "elemMods": {
+                            "indent-r": "s",
+                            "indent-l": "l"
+                          }
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "brand-logo",
+                          "mods": {
+                            "name": "megafon",
+                            "size": "m"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "primary",
+                            "size": "l"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "l"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "quantity",
+              "content": [
+                {
+                  "elem": "label",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "elem": "block"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "block": "text",
+                      "mods": {
+                        "view": "primary",
+                        "size": "l"
+                      },
+                      "content": [
+                        {
+                          "elem": "word",
+                          "elemMods": {
+                            "width": "m"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elem": "hide",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "more",
+              "elemMods": {
+                "view": "default"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "description",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "indent-b": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "actions",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "distribute": "between",
+                    "indent-b": "l"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "transaction",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "border": "bottom",
+            "space-a": "l"
+          }
+        },
+        {
+          "block": "e-accordion"
+        }
+      ],
+      "content": [
+        {
+          "elem": "show",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "vertical-align": "center",
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "short"
+            }
+          ],
+          "content": [
+            {
+              "elem": "details",
+              "content": [
+                {
+                  "elem": "time",
+                  "content": [
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "destination",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "mods": {
+                        "vertical-align": "center"
+                      }
+                    }
+                  ],
+                  "content": [
+                    {
+                      "elem": "pic",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "icon",
+                          "elemMods": {
+                            "indent-r": "s",
+                            "indent-l": "l"
+                          }
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "brand-logo",
+                          "mods": {
+                            "name": "megafon",
+                            "size": "m"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "primary",
+                            "size": "l"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "l"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "quantity",
+              "content": [
+                {
+                  "elem": "label",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "elem": "block"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "block": "text",
+                      "mods": {
+                        "view": "primary",
+                        "size": "l"
+                      },
+                      "content": [
+                        {
+                          "elem": "word",
+                          "elemMods": {
+                            "width": "m"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elem": "hide",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "more",
+              "elemMods": {
+                "view": "default"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "description",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "indent-b": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "actions",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "distribute": "between",
+                    "indent-b": "l"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "transaction",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "border": "bottom",
+            "space-a": "l"
+          }
+        },
+        {
+          "block": "e-accordion"
+        }
+      ],
+      "content": [
+        {
+          "elem": "show",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "vertical-align": "center",
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "short"
+            }
+          ],
+          "content": [
+            {
+              "elem": "details",
+              "content": [
+                {
+                  "elem": "time",
+                  "content": [
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "destination",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "mods": {
+                        "vertical-align": "center"
+                      }
+                    }
+                  ],
+                  "content": [
+                    {
+                      "elem": "pic",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "icon",
+                          "elemMods": {
+                            "indent-r": "s",
+                            "indent-l": "l"
+                          }
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "brand-logo",
+                          "mods": {
+                            "name": "megafon",
+                            "size": "m"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "primary",
+                            "size": "l"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "l"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "quantity",
+              "content": [
+                {
+                  "elem": "label",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "elem": "block"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "block": "text",
+                      "mods": {
+                        "view": "primary",
+                        "size": "l"
+                      },
+                      "content": [
+                        {
+                          "elem": "word",
+                          "elemMods": {
+                            "width": "m"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elem": "hide",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "more",
+              "elemMods": {
+                "view": "default"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "description",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "indent-b": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "actions",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "distribute": "between",
+                    "indent-b": "l"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "elem": "transaction",
+      "mix": [
+        {
+          "block": "list",
+          "elem": "item",
+          "elemMods": {
+            "border": "bottom",
+            "space-a": "l"
+          }
+        },
+        {
+          "block": "e-accordion"
+        }
+      ],
+      "content": [
+        {
+          "elem": "show",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "vertical-align": "center",
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "short"
+            }
+          ],
+          "content": [
+            {
+              "elem": "details",
+              "content": [
+                {
+                  "elem": "time",
+                  "content": [
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "ghost",
+                            "size": "s"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "m",
+                                "type": "p"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "destination",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "mods": {
+                        "vertical-align": "center"
+                      }
+                    }
+                  ],
+                  "content": [
+                    {
+                      "elem": "pic",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "icon",
+                          "elemMods": {
+                            "indent-r": "s",
+                            "indent-l": "l"
+                          }
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "brand-logo",
+                          "mods": {
+                            "name": "megafon",
+                            "size": "m"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "label",
+                      "mix": [
+                        {
+                          "block": "icon-plus",
+                          "elem": "block"
+                        }
+                      ],
+                      "content": [
+                        {
+                          "block": "text",
+                          "mods": {
+                            "view": "primary",
+                            "size": "l"
+                          },
+                          "content": [
+                            {
+                              "elem": "word",
+                              "elemMods": {
+                                "width": "l"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "quantity",
+              "content": [
+                {
+                  "elem": "label",
+                  "mix": [
+                    {
+                      "block": "icon-plus",
+                      "elem": "block"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "block": "text",
+                      "mods": {
+                        "view": "primary",
+                        "size": "l"
+                      },
+                      "content": [
+                        {
+                          "elem": "word",
+                          "elemMods": {
+                            "width": "m"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elem": "hide",
+          "mix": [
+            {
+              "block": "list",
+              "elem": "item",
+              "elemMods": {
+                "indent-t": "m"
+              }
+            },
+            {
+              "block": "e-accordion",
+              "elem": "more",
+              "elemMods": {
+                "view": "default"
+              }
+            }
+          ],
+          "content": [
+            {
+              "elem": "description",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "indent-b": "m"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m",
+                        "type": "p"
+                      }
+                    },
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l",
+                        "type": "p"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elem": "actions",
+              "mix": [
+                {
+                  "block": "list",
+                  "elem": "item",
+                  "elemMods": {
+                    "distribute": "between",
+                    "indent-b": "l"
+                  }
+                }
+              ],
+              "content": [
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "l"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "block": "text",
+                  "mods": {
+                    "view": "primary",
+                    "size": "l"
+                  },
+                  "content": [
+                    {
+                      "elem": "word",
+                      "elemMods": {
+                        "width": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

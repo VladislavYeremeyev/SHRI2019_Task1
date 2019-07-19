@@ -1,0 +1,8 @@
+.collect {
+  min-height: 380px;
+  border-width: 3px;
+}
+
+.commercial .image {
+  height: 180px;
+}

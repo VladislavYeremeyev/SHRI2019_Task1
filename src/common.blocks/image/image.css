@@ -1,5 +1,8 @@
 .image {
   width: 100%;
   border: 3px solid var(--border-bg-color);
+  background-color: var(--default-bg-color);
   background-image: var(--current-image-background);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }

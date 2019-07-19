@@ -1,3 +1,5 @@
 .input {
   width: 100%;
+
+  border: 3px solid var(--border-bg-color);
 }

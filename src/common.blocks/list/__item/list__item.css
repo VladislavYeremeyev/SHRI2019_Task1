@@ -1,0 +1,7 @@
+.list__item {
+  display: flex;
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}

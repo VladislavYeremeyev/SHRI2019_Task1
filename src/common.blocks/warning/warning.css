@@ -1,3 +1,8 @@
 .warning {
   min-height: 335px;
 }
+
+.warning .placeholder {
+  margin-top: var(--indent-m);
+  margin-bottom: var(--indent-m);
+}

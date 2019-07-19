@@ -1,0 +1,7 @@
+.collect__footer {
+  flex-direction: column;
+}
+
+.collect__footer .text_size_l {
+  margin-bottom: var(--indent-s);
+}

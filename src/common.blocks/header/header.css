@@ -1,0 +1,7 @@
+.header {
+  max-width: 1144px;
+  padding: var(--indent-xxxl) var(--gap);
+
+  display: flex;
+  justify-content: space-between;
+}

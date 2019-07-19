@@ -1,0 +1,6 @@
+.commercial__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: var(--indent-s);
+}

@@ -1,0 +1,9 @@
+.product {
+  min-height: 280px;
+  border-width: 3px;
+  position: relative;
+}
+
+.product .image {
+  height: 160px;
+}

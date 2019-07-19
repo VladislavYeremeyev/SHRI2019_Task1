@@ -1,0 +1,7 @@
+.form__item {
+  display: flex;
+}
+
+.form__item:last-child {
+  margin-bottom: 0px;
+}

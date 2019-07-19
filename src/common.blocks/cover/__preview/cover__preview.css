@@ -1,0 +1,7 @@
+.cover__preview {
+  margin-bottom: var(--indent-m);
+}
+
+.cover__preview .image {
+  height: 180px;
+}

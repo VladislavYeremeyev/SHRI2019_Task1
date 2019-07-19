@@ -1,0 +1,10 @@
+.commercial__page-button {
+  width: 8px;
+  height: 8px;
+  margin-right: var(--indent-xs);
+  background-color: var(--primary-text-color);
+}
+
+.commercial__page-button:last-child {
+  margin-right: 0;
+}

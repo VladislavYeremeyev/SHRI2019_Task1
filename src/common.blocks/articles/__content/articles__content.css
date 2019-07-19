@@ -1,0 +1,3 @@
+.articles__content .text_view_link {
+  margin-top: var(--indent-xs);
+}

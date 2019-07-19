@@ -1,0 +1,161 @@
+{
+  "block": "offer",
+  "mix": [
+    {
+      "block": "card",
+      "mods": {
+        "view": "default"
+      }
+    },
+    {
+      "block": "theme",
+      "mods": {
+        "color": "megafon-brand"
+      }
+    }
+  ],
+  "content": [
+    {
+      "elem": "partner",
+      "mix": [
+        {
+          "block": "card",
+          "elem": "content",
+          "elemMods": {
+            "space-a": "xl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "brand-logo",
+          "mods": {
+            "name": "megafon",
+            "size": "m"
+          }
+        }
+      ]
+    },
+    {
+      "elem": "footer",
+      "mix": [
+        {
+          "block": "card",
+          "elem": "footer",
+          "elemMods": {
+            "space-a": "xl"
+          }
+        }
+      ],
+      "content": [
+        {
+          "elem": "name",
+          "content": [
+            {
+              "block": "text",
+              "mods": {
+                "view": "ghost",
+                "size": "s"
+              },
+              "content": [
+                {
+                  "elem": "word",
+                  "elemMods": {
+                    "width": "m",
+                    "type": "p"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elem": "sale",
+          "content": [
+            {
+              "block": "text",
+              "mods": {
+                "view": "primary",
+                "size": "xxl"
+              },
+              "content": [
+                {
+                  "elem": "word",
+                  "elemMods": {
+                    "width": "m",
+                    "type": "p"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "block": "text",
+          "mods": {
+            "view": "secondary",
+            "size": "m"
+          },
+          "content": [
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "block": "collect",
+  "mix": [
+    {
+      "block": "card",
+      "mods": {
+        "view": "default",
+        "border": "all"
+      }
+    },
+    {
+      "block": "theme",
+      "mods": {
+        "color": "project-inverse"
+      }
+    }
+  ],
+  "content": [
+    {
+      "elem": "image",
+      "mix": [
+        {
+          "block": "card",
+          "elem": "content"
+        },
+        {
+          "block": "theme",
+          "mods": {
+            "color": "project-default"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "image"
+        }
+      ]
+    },
+    {
+      "elem": "progress",
+      "content": [
+        {
+          "elem": "done",
+          "elemMods": {
+            "size": "two-third"
+          }
+        }
+      ]
+    },
+    {
+      "elem": "footer",
+      "mix": [
+        {
+          "block": "card",
+          "elem": "footer",
+          "elemMods": {
+            "space-a": "l"
+          }
+        }
+      ],
+      "content": [
+        {
+          "block": "text",
+          "mods": {
+            "view": "primary",
+            "size": "l"
+          },
+          "content": [
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            }
+          ]
+        },
+        {
+          "block": "text",
+          "mods": {
+            "view": "secondary",
+            "size": "m"
+          },
+          "content": [
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "m",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "l",
+                "type": "p"
+              }
+            },
+            {
+              "elem": "word",
+              "elemMods": {
+                "width": "s",
+                "type": "p"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
