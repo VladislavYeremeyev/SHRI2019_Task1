@@ -4,3 +4,14 @@
   margin-top: calc((var(--word-line-height) - var(--word-height)) / 2);
   margin-bottom: calc((var(--word-line-height) - var(--word-height)) / 2);
 }
+
+/* sorry about that :( */
+.text_size_m .text__word {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.text_size_l .text__word {
+  margin-top: 8px;
+  margin-bottom: 7px;
+}

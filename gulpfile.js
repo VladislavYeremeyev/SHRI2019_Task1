@@ -5,17 +5,22 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 let uglify = require('gulp-uglify-es').default;
 var babelify = require("babelify");
-var base64 = require('gulp-base64');
-// var minifyCSS = require('gulp-minify-css');
-// var autoprefixer = require('gulp-autoprefixer');
-// var rename = require('gulp-rename');
+let cleanCSS = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('css', done => {
   gulp.src('src/common.blocks/**/*.css')
-    // .pipe(base64())
-    // .pipe(minifyCSS())
-    // .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(concat('style.css'))
+    .pipe(gulp.dest('build/'));
+
+    done();
+});
+
+gulp.task('js', done => {
+  gulp.src('src/common.blocks/**/*.js')
+    .pipe(concat('script.js'))
     .pipe(gulp.dest('build/'));
 
     done();
@@ -33,11 +38,6 @@ gulp.task('template', function() {
     .pipe(gulp.dest('./build/'));
 });
 
-// gulp.task('template', function() {
-//   return browserify('./src/template-engine.js')
-//     .bundle()
-//     .pipe(source('template-engine.js'))
-//     .pipe(buffer())
-//     .pipe(uglify())
-//     .pipe(gulp.dest('./build/'));
-// });
+gulp.task('default', gulp.series('css', 'js', function(done) {
+  done();
+}));

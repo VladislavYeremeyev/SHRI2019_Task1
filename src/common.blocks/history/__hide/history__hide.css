@@ -1,6 +1,4 @@
 .history__hide {
-  overflow: hidden;
-  max-height: 0px;
   display: flex;
   flex-direction: column;
   margin-top: 0px !important;

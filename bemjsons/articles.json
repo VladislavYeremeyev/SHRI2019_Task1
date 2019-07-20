@@ -128,7 +128,7 @@
                   "block": "text",
                   "mods": {
                     "view": "link",
-                    "size": "l"
+                    "size": "m"
                   },
                   "content": [
                     {
@@ -272,7 +272,7 @@
                   "block": "text",
                   "mods": {
                     "view": "link",
-                    "size": "l"
+                    "size": "m"
                   },
                   "content": [
                     {
@@ -416,7 +416,7 @@
                   "block": "text",
                   "mods": {
                     "view": "link",
-                    "size": "l"
+                    "size": "m"
                   },
                   "content": [
                     {

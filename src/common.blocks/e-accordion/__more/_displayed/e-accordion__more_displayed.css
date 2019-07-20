@@ -1,0 +1,6 @@
+.e-accordion__more_displayed {
+  /* max-height: none; */
+
+  /* for smooth transition */
+  max-height: 1000px;
+}
