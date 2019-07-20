@@ -1,3 +1,8 @@
 .payment {
   border: 3px solid var(--border-bg-color);
 }
+
+/* payment footer has space-between and form__item_distribute_between has the same style but auto test json seems doesn't have these classes on footer */
+.payment .button {
+  margin-left: auto;
+}

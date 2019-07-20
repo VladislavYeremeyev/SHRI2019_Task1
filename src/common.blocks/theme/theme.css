@@ -1,5 +1,5 @@
 .theme {
-  background: var(--default-bg-color);
+  background-color: var(--default-bg-color);
   --gap: var(--indent-xxxl);
 }
 

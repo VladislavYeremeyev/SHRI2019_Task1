@@ -1,4 +1,5 @@
 .layout {
   display: grid;
   background: var(--default-bg-color);
+  margin-bottom: var(--indent-xxl)
 }
