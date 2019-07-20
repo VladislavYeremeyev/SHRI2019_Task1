@@ -1,4 +1,4 @@
-if (document) {
+if (document.body) {
   document.body.addEventListener("click", function(e) {
     let { target } = e;
 
@@ -23,7 +23,7 @@ if (document) {
   });
 }
 
-if (document) {
+if (document.body) {
   document.body.addEventListener("click", function(e) {
     let { target } = e;
     let theme = document.body.getElementsByClassName('theme')[0];
