@@ -9,3 +9,7 @@
   justify-content: flex-end;
   padding: 0 var(--indent-xxxs);
 }
+
+.onoffswitch:hover {
+  cursor: pointer;
+}
