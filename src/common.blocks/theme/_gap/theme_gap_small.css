@@ -3,7 +3,7 @@
 }
 
 @media screen and (max-width: 1144px) {
-  :root {
+  .theme_gap_small {
     --gap: calc(var(--indent-m) / 2);
   }
 }

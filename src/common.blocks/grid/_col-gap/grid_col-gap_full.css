@@ -1,4 +1,3 @@
 .grid_col-gap_full {
-  /* column-gap: 100%; */
   grid-column-gap: var(--gap);
 }

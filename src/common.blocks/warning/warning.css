@@ -1,8 +1,14 @@
 .warning {
-  min-height: 335px;
+  min-height: 356px;
 }
 
 .warning .placeholder {
   margin-top: var(--indent-m);
   margin-bottom: var(--indent-m);
+}
+
+@media screen and (max-width: 1144px) {
+  .warning {
+    min-height: 335px;
+  }
 }

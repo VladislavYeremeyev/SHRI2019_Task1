@@ -1,5 +1,9 @@
+.theme {
+  --gap: var(--indent-xxxl);
+}
+
 @media screen and (max-width: 1144px) {
   .theme {
-    grid-auto-flow: row;
+    --gap: var(--indent-m);
   }
 }

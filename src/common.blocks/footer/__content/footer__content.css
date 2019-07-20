@@ -1,4 +1,6 @@
 .footer__content {
+  max-width: 1144px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
