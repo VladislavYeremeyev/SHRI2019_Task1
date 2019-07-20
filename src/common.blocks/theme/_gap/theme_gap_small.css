@@ -1,9 +1,9 @@
 .theme_gap_small {
-  --gap: calc(var(--gap-xxxl) / 2);
+  --gap: calc(var(--indent-xxxl) / 2);
 }
 
 @media screen and (max-width: 1144px) {
   :root {
-    --gap: calc(var(--gap-m) / 2);
+    --gap: calc(var(--indent-m) / 2);
   }
 }

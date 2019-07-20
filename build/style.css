@@ -15,12 +15,6 @@ body {
   background-color: var(--accent-bg-color);
 }
 
-.card {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-
 .collect {
   min-height: 380px;
   border-width: 3px;
@@ -28,6 +22,12 @@ body {
 
 .commercial .image {
   height: 180px;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 
 .commercial {
@@ -119,6 +119,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0 var(--indent-xxxs);
 }
 
 .payment {
@@ -179,6 +180,11 @@ body {
   height: 120px;
 }
 
+.avatar_size_m {
+  width: 60px;
+  height: 60px;
+}
+
 .brand-logo_name_kcell {
   background-color: #692b96;
 }
@@ -220,11 +226,6 @@ body {
   height: 24px;
 }
 
-.avatar_size_m {
-  width: 60px;
-  height: 60px;
-}
-
 .button_size_l {
   height: 42px;
   width: 200px;
@@ -254,26 +255,6 @@ body {
   width: 100% !important;
 }
 
-.card__content {
-  display: flex;
-  flex-direction: column;
-}
-
-.card__footer {
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  width: 100%;
-}
-
-.card_border_all {
-  border: 3px solid var(--border-bg-color);
-}
-
-.card_view_default {
-  background: var(--default-bg-color);
-}
-
 .collect__done {
   height: 8px;
   background-color: var(--link-text-color);
@@ -294,6 +275,26 @@ body {
 
 .collect__progress {
   border-bottom: 3px solid var(--border-bg-color);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__footer {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+}
+
+.card_border_all {
+  border: 3px solid var(--border-bg-color);
+}
+
+.card_view_default {
+  background: var(--default-bg-color);
 }
 
 .commercial__image {
@@ -372,31 +373,45 @@ body {
 }
 
 .grid_col-gap_full {
-  column-gap: 100%;
+  /* column-gap: 100%; */
+  grid-column-gap: var(--gap);
 }
 
 .grid_col-gap_half {
-  column-gap: 50%;
+  /* column-gap: 50%; */
+  grid-column-gap: calc(var(--gap) / 2);
 }
 
 .grid_col-gap_two-thirds {
-  column-gap: 66%;
+  /* column-gap: 66%; */
+  grid-column-gap: calc(var(--gap) * 2 / 3);
 }
 
 .grid_m-columns_10 {
-  grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(10%, 1fr)); */
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .grid_m-columns_12 {
-  grid-template-columns: repeat(auto-fill, minmax(8%, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(8%, 1fr)); */
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .grid_row-gap_full {
-  row-gap: 100%;
+  /* row-gap: 100%; */
+  grid-row-gap: var(--gap);
 }
 
 .grid_row-gap_half {
-  row-gap: 50%;
+  /* row-gap: 50%; */
+  grid-row-gap: calc(var(--gap) / 2);
+}
+
+.header__content {
+  max-width: 1144px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -548,12 +563,12 @@ body {
   padding-bottom: var(--indent-xxxxl);
 }
 
-.subscription__title {
-  margin-bottom: var(--indent-xl);
-}
-
 .subscription__control:last-child {
   margin-bottom: 0;
+}
+
+.subscription__title {
+  margin-bottom: var(--indent-xl);
 }
 
 .text__word {
@@ -711,12 +726,12 @@ body {
 }
 
 .theme_gap_small {
-  --gap: calc(var(--gap-xxxl) / 2);
+  --gap: calc(var(--indent-xxxl) / 2);
 }
 
 @media screen and (max-width: 1144px) {
   :root {
-    --gap: calc(var(--gap-m) / 2);
+    --gap: calc(var(--indent-m) / 2);
   }
 }
 
@@ -750,6 +765,18 @@ body {
 
 .warning__content {
   flex-direction: column;
+}
+
+.collect__done_size_half {
+  width: 50%;
+}
+
+.collect__done_size_one-third {
+  width: calc(100% /3);
+}
+
+.collect__done_size_two-third {
+  width: calc(100%/3 * 2);
 }
 
 .card__content_distribute_center {
@@ -789,18 +816,6 @@ body {
   justify-content: flex-end;
 }
 
-.card__footer_vertical-align_bottom {
-  align-items: flex-end;
-}
-
-.card__footer_vertical-align_center {
-  align-items: center;
-}
-
-.card__footer_vertical-align_top {
-  align-items: flex-start;
-}
-
 .card__footer_space-a_l {
   padding: var(--indent-l);
 }
@@ -817,16 +832,16 @@ body {
   padding: var(--indent-xxl);
 }
 
-.collect__done_size_half {
-  width: 50%;
+.card__footer_vertical-align_bottom {
+  align-items: flex-end;
 }
 
-.collect__done_size_one-third {
-  width: calc(100% /3);
+.card__footer_vertical-align_center {
+  align-items: center;
 }
 
-.collect__done_size_two-third {
-  width: calc(100%/3 * 2);
+.card__footer_vertical-align_top {
+  align-items: flex-start;
 }
 
 .form__item_border_bottom {

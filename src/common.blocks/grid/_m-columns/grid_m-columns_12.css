@@ -1,4 +1,4 @@
 .grid_m-columns_12 {
   /* grid-template-columns: repeat(auto-fill, minmax(8%, 1fr)); */
-  columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 }
