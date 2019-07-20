@@ -26,18 +26,26 @@ gulp.task('js', done => {
     done();
 });
 
-gulp.task('template', function() {
-  return browserify('./src/template-engine.js')
-    .transform(babelify.configure({
-      presets: ["@babel/preset-env"]
-    }))
-    .bundle()
-    .pipe(source('template-engine.js'))
-    .pipe(buffer())
-    .pipe(uglify())
-    .pipe(gulp.dest('./build/'));
+gulp.task('template', done => {
+  gulp.src('src/template-engine.js')
+    .pipe(concat('template-engine.js'))
+    .pipe(gulp.dest('build/'));
+
+    done();
 });
 
-gulp.task('default', gulp.series('css', 'js', function(done) {
+// gulp.task('template', function() {
+//   return browserify('./src/template-engine.js')
+//     .transform(babelify.configure({
+//       presets: ["@babel/preset-env"]
+//     }))
+//     .bundle()
+//     .pipe(source('template-engine.js'))
+//     .pipe(buffer())
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./build/'));
+// });
+
+gulp.task('default', gulp.series('css', 'js', 'template', function(done) {
   done();
 }));

@@ -1,4 +1,10 @@
 .grid_m-columns_12 {
-  /* grid-template-columns: repeat(auto-fill, minmax(8%, 1fr)); */
   grid-template-columns: repeat(12, 1fr);
+}
+
+@media screen and (max-width: 1144px) {
+  .grid_m-columns_12 {
+    grid-auto-flow: row;
+    grid-template-columns: initial;
+  }
 }
