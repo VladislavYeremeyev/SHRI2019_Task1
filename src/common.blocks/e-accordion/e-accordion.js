@@ -1,4 +1,4 @@
-if (document) {
+if (document.body) {
   document.body.addEventListener("click", function(e) {
     let { target } = e;
 
