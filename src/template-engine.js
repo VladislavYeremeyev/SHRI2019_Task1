@@ -1,9 +1,9 @@
-const bem = require('bem-xjst');
+import { bemhtml } from "bem-xjst";
 
-module.exports = function(bemjson) {
-  const bemhtml = bem.bemhtml;
+export default function(bemjson) {
+  const bem = bemhtml;
 
-  const templates = bemhtml.compile();
+  const templates = bem.compile();
   const html = templates.apply(bemjson);
 
   return html;
