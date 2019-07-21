@@ -42,7 +42,7 @@ gulp.task('template', function() {
     .bundle()
     .pipe(source('template-engine.js'))
     .pipe(buffer())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('./build/'));
 });
 
