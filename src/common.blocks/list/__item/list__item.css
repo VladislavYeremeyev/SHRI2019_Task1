@@ -4,4 +4,5 @@
 
 .list__item:last-child {
   border-bottom: none;
+  margin-bottom: 0px;
 }
