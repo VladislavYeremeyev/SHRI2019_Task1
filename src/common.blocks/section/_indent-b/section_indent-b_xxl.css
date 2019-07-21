@@ -1,3 +1,4 @@
 .section_indent-b_xxl {
-  margin-bottom: var(--indent-xxl);
+  /* margin-bottom: var(--indent-xxl); */
+  margin-bottom: 50px;
 }

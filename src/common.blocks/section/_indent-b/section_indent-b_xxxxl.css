@@ -1,3 +1,4 @@
 .section_indent-b_xxxxl {
-  margin-bottom: var(--indent-xxxxl);
+  /* margin-bottom: var(--indent-xxxxl); */
+  margin-bottom: 70px;
 }
