@@ -6,6 +6,12 @@
 }
 
 /* sorry about that :( */
+
+.text_size_s .text__word {
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+
 .text_size_m .text__word {
   margin-top: 8px;
   margin-bottom: 5px;
