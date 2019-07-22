@@ -6,7 +6,6 @@
 
 .product .image {
   height: 160px;
-  /* border-color: var(--default-bg-color); */
-  border-color: red !important;
+  border-color: var(--default-bg-color);
 }
 

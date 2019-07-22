@@ -1,5 +1,8 @@
 .history__hide {
   display: flex;
   flex-direction: column;
-  margin-top: 0px !important;
+}
+
+.history .history__hide {
+  margin-top: 0px;
 }
