@@ -121,7 +121,7 @@
                         {
                           "block": "brand-logo",
                           "mods": {
-                            "name": "megafon",
+                            "name": "yota",
                             "size": "m"
                           }
                         }
@@ -443,7 +443,7 @@
                         {
                           "block": "brand-logo",
                           "mods": {
-                            "name": "megafon",
+                            "name": "mts",
                             "size": "m"
                           }
                         }
@@ -765,7 +765,7 @@
                         {
                           "block": "brand-logo",
                           "mods": {
-                            "name": "megafon",
+                            "name": "kcell",
                             "size": "m"
                           }
                         }

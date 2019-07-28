@@ -3,24 +3,8 @@
  * @return {string} HTML разметка страницы
  */
 
-export default function(obj) {
-  function outputClasses(obj, ctxBlock) {
-    if (ctxBlock && obj.elem && !obj.block) {
-      obj.block = ctxBlock;
-    }
-
-    let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
-
-    if (typeof obj !== 'object') {
-      return obj;
-    }
-    if (obj === undefined || obj === null || obj === false) {
-      return '';
-    }
-    return ' class="' + resultClass + '"';
-  }
-
-  function bemClass(obj, argBlock) {
+export default function (obj) {
+  function getClass (obj, argBlock) {
     const block = obj.block || argBlock;
     const base = block + (obj.elem ? '__' + obj.elem : '');
     const mods = obj.elem ? obj.elemMods : obj.mods;
@@ -28,8 +12,9 @@ export default function(obj) {
     let output = base === argBlock ? '' : base;
 
     if (mods) {
-      for (let i in mods) {
-        output += ' ' + base + '_' + i + (mods[i] === true ? '' : '_' + mods[i]);
+      for (const i in mods) {
+        output +=
+          ' ' + base + '_' + i + (mods[i] === true ? '' : '_' + mods[i]);
       }
     }
 
@@ -38,34 +23,34 @@ export default function(obj) {
         obj.mix = [obj.mix];
       }
       for (let i = 0; i < obj.mix.length; i++) {
-        let mix = obj.mix[i];
+        const mix = obj.mix[i];
         if (!mix) {
           continue;
         }
-        output += ' ' + bemClass(mix, block);
+        output += ' ' + getClass(mix, block);
       }
     }
     return output;
   }
 
-  function toHTML(obj, ctxBlock) {
-    if (obj === undefined || obj === false || obj === null) {
+  function getOutputClasses (obj, ctxBlock) {
+    if (ctxBlock && obj.elem && !obj.block) {
+      obj.block = ctxBlock;
+    }
+
+    const resultClass = obj.block || ctxBlock ? getClass(obj) : '';
+
+    if (typeof obj !== 'object') {
+      return obj;
+    }
+    // last condition is for empty object -> {}
+    if (obj === undefined || obj === null || obj === false || (Object.keys(obj).length === 0 && obj.constructor === Object)) {
       return '';
     }
-    if (obj.block) {
-      ctxBlock = obj.block;
-    }
-    if (Array.isArray(obj)) {
-      return concatArray(obj, ctxBlock);
-    }
-    const DEFAULT_TAG = 'div';
-    obj.tag = obj.tag || DEFAULT_TAG;
-
-    const result = '<' + obj.tag + outputClasses(obj, ctxBlock);
-    return result + '>' + toHTML(obj.content, ctxBlock) + '</' + obj.tag + '>';
+    return ' class="' + resultClass + '"';
   }
 
-  function concatArray(array, ctxBlock) {
+  function concatArray (array, ctxBlock) {
     let output = '';
     for (let i = 0; i < array.length; i++) {
       if (array[i] !== undefined && array[i] !== false && array[i] !== null) {
@@ -74,5 +59,26 @@ export default function(obj) {
     }
     return output;
   }
+
+  function toHTML (obj, ctxBlock) {
+    if (obj === undefined || typeof obj === 'boolean' || obj === null) {
+      return '';
+    }
+    if (typeof obj !== 'object') {
+      return obj;
+    }
+    if (obj.block) {
+      ctxBlock = obj.block;
+    }
+    if (Array.isArray(obj)) {
+      return concatArray(obj, ctxBlock);
+    }
+    const defaultTag = 'div';
+    const tag = obj.tag || defaultTag;
+
+    const result = '<' + tag + getOutputClasses(obj, ctxBlock);
+    return result + '>' + toHTML(obj.content, ctxBlock) + '</' + tag + '>';
+  }
+
   return toHTML(obj);
 }

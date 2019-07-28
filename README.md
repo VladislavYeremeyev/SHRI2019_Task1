@@ -12,8 +12,16 @@
 
 * Для сборки финального бандла использовал `Gulp`. Хотелось разобраться в этой технологии, а также приглянулась удобная и доступная конфигурация тасков, помогающих в разработке.
   * Для получения финального бандла можно воспользоваться комадной `gulp` в терминале, которая соберет в один `.css` и один `.js` файл все стили и скрипты из `src/common.blocks`, а так же функцию шаблонизации - `src/template-engine.js`. Итоговый бандл будет находиться в папке `build`.
-* В папке `bemjsons` находятся `BEMJSON` файлы контентных блоков.
+* [Функция шаблонизации](https://github.com/VladislavYeremeyev/SHRI2019_Task1/blob/master/TEMPLATER.md) написана на основе [bemjson-to-html](https://github.com/floatdrop/bemjson-to-html)
+* Для тестирования функции шаблонизации использовал `Mocha` + `Chai`.
+* В папке `bemjsons` находятся `BEMJSON` файлы контентных блоков и страниц.
 * В папке `htmlPages` находятся `html` файлы контентных блоков, созданные на основе BEMJSON файлов и утилиты `utils/compileJson.js`.
 * В папке `utils` находятся вспомогательные файлы:
   * `utils/compileJson.js` - скрипт позволяющий получить html-верстку из `BEMJSON`. Для удобства можно воспользоваться командой `npm run compile "fileName.json"`, где `fileName.json` - путь до необходимого файла. Созданный HTML-файл будет находиться в папке `htmlPages`.
   * `utils/htmlTemplate.html` - базовый HTML-шаблон.
+* Для поддежания единого код-стайла и хорошего качества кода использовал `stylelint` и `eslint`.
+* NPM-скрипты:
+  * `npm run compile "fileName.json"` - скрипт позволяющий получить html-верстку из `BEMJSON` файла.
+  * `npm run lint-css` - линтинг css-файлов в `src/**/*.css` с помощью `stylelint`.
+  * `npm run lint-js` - линтинг js-файлов в `src/**/*.js` и `src/template-engine.js` с помощью `eslint`.
+  * `npm run test` - запуск автотестов,  хранящихся в `test/test.js`.

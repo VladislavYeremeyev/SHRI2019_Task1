@@ -1,6 +1,5 @@
 .warning {
   min-height: 356px;
-  margin-bottom: var(--indent(xxl))
 }
 
 .warning .placeholder {
